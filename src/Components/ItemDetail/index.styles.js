@@ -38,7 +38,152 @@ const WrapItem = styled.div`
         margin-bottom: 3.5rem;
         margin-top: 1rem;
     }
-    .content-detail {
+    .info-item {
+        width: fit-content;
+        padding: 4px 5px;
+        border-radius: 3px;
+        background-color: #D4E6A5;
+        color: #476A2E;
+        font-size: 16px;
+        line-height: 29px;
+        font-weight: 700;
+        margin-right: 12px;
+    }
+    .name-detail, .category-type, .info, .glass-type, .instruction, .ingredient {
+        font-size: 16px;
+        line-height: 29px;
+        font-weight: 700;
+        color: #222222;
+    }
+    .images-style {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 3px 3px 0 0;
+    }
+    @media only screen and (min-width: 256px) and (max-width: 500px) {
+        .content-detail {
+            display: block;
+            .flex-content {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                
+                .wrap-content-detail {
+                    display: grid;
+                    grid-template-rows: repeat(6, 36px);
+                    grid-row-gap: 10px;
+                }
+            }
+        }
+    }
+    @media only screen and (min-width: 50px) and (max-width: 255px) {
+        
+        .content-detail {
+            display: block;
+            .flex-content {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                
+                .wrap-content-detail {
+                    display: grid;
+                    grid-template-rows: repeat(6, 36px);
+                    grid-row-gap: 20px;
+                    .info-item {
+                        width: fit-content;
+                        padding: 4px 5px;
+                        border-radius: 3px;
+                        background-color: #D4E6A5;
+                        color: #476A2E;
+                        font-size: 16px;
+                        line-height: 29px;
+                        font-weight: 700;
+                        margin-right: 12px;
+                    }
+                    .name-detail, .category-type, .info, .glass-type, .instruction, .ingredient {
+                        font-size: 16px;
+                        line-height: 29px;
+                        font-weight: 700;
+                        color: #222222;
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (min-width: 501px) and (max-width: 835px) {
+        .content-detail {
+            display: grid;
+            grid-template-columns: 2fr 3fr;
+            grid-gap: 3rem;
+            gap: 3rem;
+            .flex-content {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                
+                .wrap-content-detail {
+                    display: grid;
+                    grid-template-rows: repeat(6, 36px);
+                    grid-row-gap: 10px;
+                    .info-item {
+                        width: fit-content;
+                        padding: 4px 5px;
+                        border-radius: 3px;
+                        background-color: #D4E6A5;
+                        color: #476A2E;
+                        font-size: 16px;
+                        line-height: 29px;
+                        font-weight: 700;
+                        margin-right: 12px;
+                    }
+                    .name-detail, .category-type, .info, .glass-type, .instruction, .ingredient {
+                        font-size: 16px;
+                        line-height: 29px;
+                        font-weight: 700;
+                        color: #222222;
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (min-width: 836px) and (max-width: 1271px) {
+        .content-detail {
+            display: grid;
+            grid-template-columns: 2fr 3fr;
+            grid-gap: 3rem;
+            gap: 3rem;
+            .flex-content {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                
+                .wrap-content-detail {
+                    display: grid;
+                    grid-template-rows: repeat(6, 36px);
+                    grid-row-gap: 10px;
+                    .info-item {
+                        width: fit-content;
+                        padding: 4px 5px;
+                        border-radius: 3px;
+                        background-color: #D4E6A5;
+                        color: #476A2E;
+                        font-size: 16px;
+                        line-height: 29px;
+                        font-weight: 700;
+                        margin-right: 12px;
+                    }
+                    .name-detail, .category-type, .info, .glass-type, .instruction, .ingredient {
+                        font-size: 16px;
+                        line-height: 29px;
+                        font-weight: 700;
+                        color: #222222;
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (min-width: 1272px) {
+        .content-detail {
         display: grid;
         grid-template-columns: 2fr 3fr;
         grid-gap: 3rem;
@@ -74,11 +219,6 @@ const WrapItem = styled.div`
         
 
     }
-    .images-style {
-        width: 100%;
-        object-fit: cover;
-        border-radius: 3px 3px 0 0;
     }
-
 `;
 export {WrapItem}
